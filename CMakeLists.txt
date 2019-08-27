@@ -14,14 +14,13 @@ link_directories(/usr/lib
 
 
 set(SOURCES
-  easywsclient.cpp
+  src/easywsclient.cpp
 )
 
 
 add_library(${PROJECT_NAME} ${SOURCES})
 target_link_libraries(${PROJECT_NAME} ${LIBS})
 
-add_subdirectory(test)
 
 install(TARGETS ${PROJECT_NAME} DESTINATION lib/)
-install(DIRECTORY ./ DESTINATION include/easywsclient FILES_MATCHING PATTERN "*.h*")
+install(DIRECTORY include/ DESTINATION include/easywsclient FILES_MATCHING PATTERN "*.h")

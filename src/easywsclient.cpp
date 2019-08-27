@@ -72,7 +72,7 @@
 #include <vector>
 #include <string>
 
-#include "easywsclient.hpp"
+#include "easywsclient.h"
 
 using easywsclient::Callback_Imp;
 using easywsclient::BytesCallback_Imp;
